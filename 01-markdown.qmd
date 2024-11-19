@@ -1,0 +1,26 @@
+---
+format: html
+editor: source
+---
+
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+```
+
+## YAML Metadaten
+
+1. Füge einen Titel und einen Autor zum YAML-Header hinzu. Füge auch ein Inhaltsverzeichnis hinzu.
+
+## Abschnitte
+
+1. Füge zwei Hauptabschnitte mit Überschriften der Ebene 1 hinzu. Füge einen Unterabschnitt mit einer Überschrift der Ebene 2 zu einem deiner Hauptabschnitte hinzu.
+
+## Hyperlink
+
+1. Füge einen Hyperlink zur Kurswebsite hinzu. Der Text des Links sollte "rstatsZH Kurswebseite" sein.
+
+## Quarto Logo
+
+1. **Erweitertes Ziel**: Füge ein Bild hinzu. Verwende das Logo, das unter `images/quarto-logo.png` in deinem Projektordner ist. Tipp: Überprüfe die Dokumentation auf [quarto.org](https://quarto.org/) für Links und Bilder: <https://quarto.org/docs/authoring/markdown-basics.html#links-images>
+
