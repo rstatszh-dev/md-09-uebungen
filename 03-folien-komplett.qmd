@@ -1,0 +1,81 @@
+---
+title: "Hallo, Pinguine!"
+author: "Rainbow Train"
+format: 
+  revealjs: 
+    logo: images/quarto-logo.png
+    footer: "Footer text"
+    chalkboard: true
+editor: visual
+execute: 
+  echo: true
+---
+
+# Einleitung
+
+## Daten
+
+Für diese Analyse verwenden wir den `penguins`-Datensatz aus dem R-Paket `palmerpenguins`.
+
+```{r}
+#| label: lade-pakete
+#| message: false
+
+library(tidyverse)
+library(ggthemes)
+library(palmerpenguins)
+library(gt)
+```
+
+## Pinguin-Arten
+
+Die folgende Abbildung zeigt ein Streudiagramm der Pinguinarten.
+
+```{r}
+#| label: schnabel-arten
+#| warning: false
+#| fig-width: 5
+#| fig-asp: 0.618
+#| output-location: column-fragment
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, 
+                     y = bill_depth_mm,
+                     color = species,
+                     shape = species)) +
+  geom_point() +
+  scale_color_colorblind() +
+  labs(x = "Bill length (mm)", y = "Bill depth (mm)") +
+  theme_minimal()
+```
+
+## Pinguine
+
+Die folgende Tabelle zeigt die ersten 10 Pinguine aus dem Datensatz.
+
+```{r}
+#| label: penguins-top10
+
+penguins |>
+  slice_head(n = 10) |>
+  select(species, island, bill_length_mm, bill_depth_mm) |>
+  gt()
+```
+
+::: notes
+-   Punkt 1
+-   Punkt 2
+-   Punkt 3
+:::
+
+# Analyse
+
+## Modellierung
+
+::: incremental
+
+- Informationen über das Modell
+- Text über die Ergebnisse
+- Kommentare über Mängel
+
+:::
