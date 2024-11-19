@@ -53,6 +53,8 @@ penguins |>
 
 2. Beginne mit "In ... " und setzte den Satz mit einem Querverweis zu der Abbildung fort.
 
+3. Render das Dokument und schaube ob der Querverweis auf das Diagramm, welcches aus dem untenstehenden Code generiert wurde, funktioniert.
+
 In ...
 
 ```{r}
@@ -73,4 +75,5 @@ ggplot(data = penguins,
 
 1.  Füge das Quarto-Logo aus dem Ordner `images/` als Abbildung ein. Füge eine Beschriftung (caption), eine Bezeichnung (label) und einen Querverweis zu der Abbildung hinzu. Tipps: <TODO>
 
+2. Render das Dokument und schaue ob der Querverweis auf das Logo funktioniert.
 
