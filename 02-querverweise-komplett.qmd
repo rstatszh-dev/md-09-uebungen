@@ -1,6 +1,7 @@
 ---
 title: "Querverweise"
 subtitle: "Tabellen und Diagramme"
+lang: de
 format:
   html:
     embed-resources: true
@@ -32,7 +33,7 @@ library(palmerpenguins)
 Siehe @tbl-pinguine für Daten über ein paar Pinguine.
 
 ```{r}
-#| label: pinguine
+#| label: tbl-pinguine
 #| tbl-cap: "Schnabel Tiefe der Pinguine nach Insel und Art."
 
 penguins |> 
@@ -53,9 +54,11 @@ penguins |>
 
 2. Beginne mit "In ... " und setzte den Satz mit einem Querverweis zu der Abbildung fort.
 
-In ...
+In @fig-pinguine sind die Schnabel Tiefe und Länge der Pinguine Art dargestellt.
 
 ```{r}
+#| label: fig-pinguine
+#| fig-cap: "Schnabel Tiefe und Länge der Pinguine Art."
 #| warning: false
 
 ggplot(data = penguins,
@@ -73,4 +76,7 @@ ggplot(data = penguins,
 
 1.  Füge das Quarto-Logo aus dem Ordner `images/` als Abbildung ein. Füge eine Beschriftung (caption), eine Bezeichnung (label) und einen Querverweis zu der Abbildung hinzu. Tipps: <TODO>
 
+Siehe @fig-quarto-logo zeigt das Quarto-Logo.
+
+![Quarto Logo](images/quarto-logo.png){#fig-quarto-logo}
 
