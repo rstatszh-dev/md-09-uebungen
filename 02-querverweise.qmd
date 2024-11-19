@@ -1,0 +1,69 @@
+---
+title: "Querverweise"
+subtitle: "Tabellen und Diagramme"
+format: html
+editor: source
+---
+
+```{r}
+#| label: lade-packages
+#| message: false
+
+library(tidyverse)
+library(ggthemes)
+library(palmerpenguins)
+```
+
+## Aufgabe 1: Querverweis auf eine Tabelle im Code
+
+1. Render das Dokument und schaube ob der Querverweis auf die Tabelle, die aus dem untenstehenden Code generiert wurde, funktioniert.
+
+2. Korrigiere das Label im Code-Abschnitt unten, damit der Querverweis funktioniert.
+
+3. Render das Dokument und schaube ob der Querverweis auf die Tabelle, die aus dem untenstehenden Code generiert wurde, funktioniert.
+
+Siehe @tbl-pinguine für Daten über ein paar Pinguine.
+
+```{r}
+#| label: pinguine
+#| tbl-cap: Schnabel Tiefe der Pinguine nach Insel und Art.
+
+penguins |> 
+  filter(!is.na(bill_depth_mm)) |> 
+  group_by(island, species) |>
+  summarise(n = n(),
+            mean_bill_depth = mean(bill_depth_mm),
+            sd_bill_depth = sd(bill_depth_mm)) |>
+  ungroup() |> 
+  gt() |> 
+  fmt_number(columns = c(mean_bill_depth, sd_bill_depth),
+             decimals = 1)
+```
+
+## Aufgabe 2: Querverweis auf eine Abbildung, die aus Code generiert wurde
+
+1. Im unten stehenden Code-Block, füge eine Beschriftung (caption) und eine Bezeichnung (label) für die Abbildung hinzu:
+
+2. Beginne mit "In Abbildung ... " und setzte den Satz mit einem Querverweis zu der Abbildung hinzu.
+
+In Abbildung ...
+
+```{r}
+#| warning: false
+
+ggplot(data = penguins,
+       mapping = aes(x = bill_length_mm, 
+                     y = bill_depth_mm,
+                     color = species,
+                     shape = species)) +
+  geom_point() +
+  scale_color_colorblind() +
+  labs(x = "Bill length (mm)", y = "Bill depth (mm)") +
+  theme_minimal()
+```
+
+## Aufgabe 3: Querverweis auf ein Bild aus einem Ordner
+
+1.  Fügen Sie das Quarto-Logo aus dem Ordner `images/` als Abbildung ein. Fügen Sie eine Beschriftung, eine Kennung und einen Querverweis zu der Abbildung hinzu. Tipps: <TODO>
+
+
