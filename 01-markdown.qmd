@@ -1,7 +1,15 @@
 ---
-format: html
+format:
+  html:
+    embed-resources: true
+    toc: true
+execute:
+  warning: false
+editor_options: 
+  chunk_output_type: console
 editor: source
 ---
+
 
 ```{r}
 library(palmerpenguins)
