@@ -13,7 +13,7 @@ editor: source
 
 ## Aufgabe 2: YAML Metadaten
 
-1. Füge einen Titel und einen Autor zum YAML-Header hinzu. Render das Dokument.
+1. Füge einen Titel (title:) und einen Autor (author:) zum YAML-Header hinzu. Render das Dokument.
 
 2. Füge ein Inhaltsverzeichnis hinzu. Render das Dokument.
 
