@@ -73,7 +73,7 @@ ggplot(data = penguins,
 
 ## Aufgabe 3: Querverweis auf ein Bild aus einem Ordner 
 
-1.  Füge das Quarto-Logo aus dem Ordner `images/` als Abbildung ein. Füge eine Beschriftung (caption), eine Bezeichnung (label) und einen Querverweis zu der Abbildung hinzu. Tipps: <https://rstatszh-k009.github.io/website/folien/md-09-quarto.html#/abbildung-querverweise>
+1.  Füge das Quarto-Logo aus dem Ordner `images/` als Abbildung ein. Füge eine Beschriftung (caption), eine Bezeichnung (label) und einen Querverweis zu der Abbildung hinzu. Tipps: <https://rstatszh-k010.github.io/website/folien/md-09-quarto.html#/abbildung-querverweise>
 
 2. Render das Dokument und schaue ob der Querverweis auf das Logo funktioniert.
 

@@ -73,9 +73,7 @@ penguins |>
 ## Modellierung
 
 ::: incremental
-
-- Informationen über das Modell
-- Text über die Ergebnisse
-- Kommentare über Mängel
-
+-   Informationen über das Modell
+-   Text über die Ergebnisse
+-   Kommentare über Mängel
 :::
