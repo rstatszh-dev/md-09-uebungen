@@ -3,45 +3,41 @@ title: "Markdown Syntax"
 author: "Rainbow Train"
 format:
   html:
-    embed-resources: true
     toc: true
-execute:
-  warning: false
-editor_options: 
-  chunk_output_type: console
 editor: source
 ---
 
-```{r}
-library(palmerpenguins)
-library(tidyverse)
-```
+# Aufgaben
 
-# Einführung
+## Aufgabe 1: Abschnitte
 
-## Markdown Syntax
+1. Am Beginn des Quarto-Dokuments, nach den YAML Metadaten, füge einen Hauptabschnitt mit Überschrift der Ebene 1 hinzu. Nenne diesen Abschnitt "Aufgaben".
 
-Markdown Syntax ...
+2. Am Ende des Quarto-Dokuments, nach dem Abschnitt "Aufgabe 4: Quarto Logo", füge einen Abschnitt mit Überschrift der Ebene 1 hinzu. Nenne diesen Abschnitt "Ausprobieren". Sobald du am Ende von Aufgabe 4 angekommen bist, kannst du im Abschnitt "Ausprobieren" deine eigenen Ideen ausprobieren (Inspiration: <https://quarto.org/docs/authoring/markdown-basics.html>. Nutze jeweils eine Überschrift der Ebene 2 für die einzelnen Aufgaben.
 
-# Übungen
+## Aufgabe 2: YAML Metadaten
 
-## YAML Metadaten
+1. Füge einen Titel und einen Autor zum YAML-Header hinzu. Render das Dokument.
 
-1. Füge einen Titel und einen Autor zum YAML-Header hinzu. Füge auch ein Inhaltsverzeichnis hinzu.
+2. Füge ein Inhaltsverzeichnis hinzu. Render das Dokument.
 
-## Abschnitte
+## Aufgabe 3: Hyperlink
 
-1. Füge zwei Hauptabschnitte mit Überschriften der Ebene 1 hinzu. Füge einen Unterabschnitt mit einer Überschrift der Ebene 2 zu einem deiner Hauptabschnitte hinzu.
+1. Füge einen Hyperlink zur Kurswebsite hinzu. Der Text des Links soll "rstatsZH Kurswebseite" sein.
 
-## Hyperlink
+[rstatsZH Kurswebseite](https://rstatszh-k010.github.io/website/)
 
-1. Füge einen Hyperlink zur Kurswebsite hinzu. Der Text des Links sollte "rstatsZH Kurswebseite" sein.
-
-[rstatsZH Kurswebseite](https://rstatszh-k009.github.io/website/)
-
-## Quarto Logo
+## Aufgabe 4: Quarto Logo
 
 1. **Erweitertes Ziel**: Füge ein Bild hinzu. Verwende das Logo, das unter `images/quarto-logo.png` in deinem Projektordner ist. Tipp: Überprüfe die Dokumentation auf [quarto.org](https://quarto.org/) für Links und Bilder: <https://quarto.org/docs/authoring/markdown-basics.html#links-images>
 
 ![](images/quarto-logo.png)
+
+# Ausprobieren
+
+## Text Formatierung
+
+- *italics*, **bold**, ***bold italics***
+- superscript^2^ / subscript~2~
+- ~~strikethrough~~
 

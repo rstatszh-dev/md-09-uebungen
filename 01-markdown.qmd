@@ -1,34 +1,27 @@
 ---
-format:
-  html:
-    embed-resources: true
-    toc: true
-execute:
-  warning: false
-editor_options: 
-  chunk_output_type: console
+format: html
 editor: source
 ---
 
 
-```{r}
-library(palmerpenguins)
-library(tidyverse)
-```
 
-## YAML Metadaten
+## Aufgabe 1: Abschnitte
 
-1. Füge einen Titel und einen Autor zum YAML-Header hinzu. Füge auch ein Inhaltsverzeichnis hinzu.
+1. Am Beginn des Quarto-Dokuments, nach den YAML Metadaten, füge einen Hauptabschnitt mit Überschrift der Ebene 1 hinzu. Nenne diesen Abschnitt "Aufgaben".
 
-## Abschnitte
+2. Am Ende des Quarto-Dokuments, nach dem Abschnitt "Aufgabe 4: Quarto Logo", füge einen Abschnitt mit Überschrift der Ebene 1 hinzu. Nenne diesen Abschnitt "Ausprobieren". Sobald du am Ende von Aufgabe 4 angekommen bist, kannst du im Abschnitt "Ausprobieren" deine eigenen Ideen ausprobieren (Inspiration: <https://quarto.org/docs/authoring/markdown-basics.html>. Nutze jeweils eine Überschrift der Ebene 2 für die einzelnen Aufgaben.
 
-1. Füge zwei Hauptabschnitte mit Überschriften der Ebene 1 hinzu. Füge einen Unterabschnitt mit einer Überschrift der Ebene 2 zu einem deiner Hauptabschnitte hinzu.
+## Aufgabe 2: YAML Metadaten
 
-## Hyperlink
+1. Füge einen Titel und einen Autor zum YAML-Header hinzu. Render das Dokument.
 
-1. Füge einen Hyperlink zur Kurswebsite hinzu. Der Text des Links sollte "rstatsZH Kurswebseite" sein.
+2. Füge ein Inhaltsverzeichnis hinzu. Render das Dokument.
 
-## Quarto Logo
+## Aufgabe 3: Hyperlink
+
+1. Füge einen Hyperlink zur Kurswebsite hinzu. Der Text des Links soll "rstatsZH Kurswebseite" sein.
+
+## Aufgabe 4: Quarto Logo
 
 1. **Erweitertes Ziel**: Füge ein Bild hinzu. Verwende das Logo, das unter `images/quarto-logo.png` in deinem Projektordner ist. Tipp: Überprüfe die Dokumentation auf [quarto.org](https://quarto.org/) für Links und Bilder: <https://quarto.org/docs/authoring/markdown-basics.html#links-images>
 
